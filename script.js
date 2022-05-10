@@ -21,7 +21,6 @@ Output: ${sArray.indexOf(target)}`);
 searchArray(nums,tarVal);
 searchArray(nums,tarVal2);
 //hard
-console.log(`Exercise: Hard`);
 //veryhard
 function coinSolver(coins,amount){
     function downSort(a,b){return a>b? -1 : a<b ?  1 : 0;}
