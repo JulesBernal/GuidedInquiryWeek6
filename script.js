@@ -36,17 +36,20 @@ Output:${count=amount/coinsSort[0]}`);
 
     for (i=0;i<coins.length;i++){
         if(amount!=0 || amount/coinsSort[i]>=1){
-            for(x=0;0===amount-(x*coinsSort[i]);x++){
-               count+=x;
+            while(amount!=0){
+               if(amount-coinsSort[i]<0){break;} 
+               amount-=coinsSort[i];
+               count++;
             }
-            holdNum=amount/coinsSort[i];
-        amount-=holdNum*coinsSort[i];
-        //count+=holdNum;
         }
     }
 
     return console.log(`something: ${count}`);
 }
-const coinArray1=[1,2,5],coinArray2=[2], amt1=11,amt2=3;
+const coinArray1=[1,2,5],coinArray2=[2], amt1=11,amt2=3,coinArray3=[1,2,5,10,25],amt3=308;
+console.log(`
+Exercise: Very hard`);
 coinSolver(coinArray1,amt1);
 coinSolver(coinArray2,amt2);
+
+coinSolver(coinArray3,amt3);
