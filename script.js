@@ -14,7 +14,8 @@ avgArray(arrayTest);
 const nums = [4,5,6,7,0,1,2];
 const tarVal=0,tarVal2=3;
 function searchArray (sArray,target){
-   return console.log(`Exercise: Medium
+   return console.log(`
+Exercise: Medium
 Input: ${sArray}, target = ${target}
 Output: ${sArray.indexOf(target)}`);
 }
@@ -44,12 +45,11 @@ Output:${count=amount/coinsSort[0]}`);
         }
     }
 
-    return console.log(`something: ${count}`);
+    return console.log(`input: ${coins}  output:${count}`);
 }
 const coinArray1=[1,2,5],coinArray2=[2], amt1=11,amt2=3,coinArray3=[1,2,5,10,25],amt3=308;
 console.log(`
 Exercise: Very hard`);
 coinSolver(coinArray1,amt1);
 coinSolver(coinArray2,amt2);
-
 coinSolver(coinArray3,amt3);
