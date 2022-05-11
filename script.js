@@ -26,7 +26,7 @@ searchArray(nums,tarVal2);
 function coinSolver(coins,amount){
     function downSort(a,b){return a>b? -1 : a<b ?  1 : 0;}
     const coinsSort=coins.sort(downSort);
-    let holdNum=0,count=0; 
+    let count=0; 
     
     if((coinsSort[coins.length-1]>amount && coinsSort[0]>amount) || (coinsSort.length<=1 && amount/coinsSort[0]!=1)){
         return console.log(`Output: ${-1}`);
